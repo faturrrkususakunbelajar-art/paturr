@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Marketing Starter - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="login-page" class="page active">
+        <div class="login-container">
+            <h2>Selamat Datang di Dashboard Pemasaran</h2>
+            <form id="login-form">
+                <input type="text" id="username" placeholder="Nama Pengguna" required>
+                <input type="password" id="password" placeholder="Kata Sandi" required>
+                <button type="submit">Masuk</button>
+            </form>
+            <p class="disclaimer">Demo: Gunakan Nama Pengguna: admin, Kata Sandi: 12345</p>
+        </div>
+    </div>
+
+    <div id="main-page" class="page">
+        <header>
+            <h1>Dashboard Pemasaran Digital</h1>
+            <nav>
+                <a href="#" id="logout-button">Keluar</a>
+            </nav>
+        </header>
+
+        <div class="content-container">
+            <aside class="sidebar">
+                <h3>Menu Utama</h3>
+                <ul>
+                    <li><a href="#produk">Kelola Produk</a></li>
+                    <li><a href="#analisis">Analisis Data</a></li>
+                    <li><a href="#kampanye">Kampanye Iklan</a></li>
+                </ul>
+            </aside>
+
+            <main class="main-content">
+                <section id="produk">
+                    <h2>Unggah & Kelola Produk</h2>
+                    <form id="product-form">
+                        <input type="text" id="product-name" placeholder="Nama Produk" required>
+                        <textarea id="product-desc" placeholder="Deskripsi Produk" required></textarea>
+                        <input type="file" id="product-image" accept="image/*" required>
+                        <button type="submit">Unggah Produk</button>
+                    </form>
+
+                    <h3>Daftar Produk Diunggah</h3>
+                    <div id="product-list" class="list-container">
+                        </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
